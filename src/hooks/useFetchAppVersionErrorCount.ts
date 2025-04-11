@@ -125,3 +125,7 @@ export const useFetchAppVersionErrorCount = ({
     data,
   };
 };
+
+export type UseFetchAppVersionErrorCountReturnType = ReturnType<
+  typeof useFetchAppVersionErrorCount
+>;
