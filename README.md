@@ -1,7 +1,5 @@
 # Embrace.io Interview
 
-![Embrace.io Interview](insert-your-picture-url-here)
-
 ## Key Assumptions:
 - No fetch endpoint was provided; the data is simulated.
 - The indexes of the crash count match the index of the data point's timestamp.
@@ -38,9 +36,9 @@
 - **date-fns** for date formatting.
 
 ## Screenshots:
-Here, you can provide images of the app interface or any other relevant screenshots.
+
+![image](https://github.com/user-attachments/assets/912b99ce-acc4-4867-bebd-66b7e373dc11)
 
 ---
 
-## License:
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
