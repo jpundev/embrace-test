@@ -32,7 +32,6 @@
   overflow-x: auto;
 }
 
-/* Optional: Add a loading/error state style */
 .statusMessage {
   text-align: center;
   font-size: 16px;
@@ -71,7 +70,7 @@
 
 .errorIcon {
   font-size: 1.5rem;
-  color: #ff4d4f; /* Red for errors */
+  color: #ff4d4f;
 }
 
 .errorText {
@@ -80,7 +79,7 @@
 
 .emptyIcon {
   font-size: 1.5rem;
-  color: #d9d9d9; /* Light grey for no data */
+  color: #d9d9d9;
 }
 
 @keyframes spin {
@@ -93,7 +92,6 @@
 }
 
 @media (max-width: 480px) {
-  /* Add your styles here */
   .chartContainer {
     height: 400px;
   }
