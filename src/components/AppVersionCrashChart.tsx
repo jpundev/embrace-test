@@ -16,8 +16,6 @@ export const AppVersionCrashChart = ({
 }: {
   data: AppVersionCrashChartResponseDataType[];
 }) => {
-  // Function to format the timestamp to a human-readable date without using an external library
-
   const lineColors = useMemo(() => {
     return getRandomLineColors(data.length);
   }, [data]);
