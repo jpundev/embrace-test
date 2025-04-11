@@ -37,8 +37,11 @@
 
 ## Screenshots:
 
-![image](https://github.com/user-attachments/assets/912b99ce-acc4-4867-bebd-66b7e373dc11)
+https://github.com/user-attachments/assets/831afcd4-cd2e-45af-8cbf-164bee276121
 
 ---
+
+
+
 
 
