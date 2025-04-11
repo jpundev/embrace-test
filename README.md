@@ -22,12 +22,12 @@
 
 2. Install dependencies:
     ```bash
-    npm install
+    yarn install
     ```
 
 3. Run the project:
     ```bash
-    npm start
+    yarn dev
     ```
 
 ## Libraries Used:
