@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import {
   Label,
   Legend,
@@ -9,7 +8,8 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { formatDate, getRandomLineColors } from "../helpers/helper";
+import { lineColors } from "../constants/colorArray";
+import { formatDate } from "../helpers/helper";
 import { AppVersionCrashChartResponseDataType } from "../hooks/useFetchAppVersionErrorCount";
 
 type AppVersionCrashChartProps = {
@@ -17,9 +17,6 @@ type AppVersionCrashChartProps = {
 };
 
 export const AppVersionCrashChart = ({ data }: AppVersionCrashChartProps) => {
-  const lineColors = useMemo(() => {
-    return getRandomLineColors(data.length);
-  }, [data]);
   return (
     <ResponsiveContainer width="100%" height="100%">
       <LineChart
