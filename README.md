@@ -37,7 +37,10 @@
 
 ## Screenshots:
 
-https://github.com/user-attachments/assets/831afcd4-cd2e-45af-8cbf-164bee276121
+
+
+https://github.com/user-attachments/assets/91dbc60b-6417-43d6-9364-93ae9e595dc0
+
 
 ---
 
