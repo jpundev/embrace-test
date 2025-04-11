@@ -34,7 +34,7 @@ export const AppVersionCrashReport = () => {
   );
 };
 
-export const CrashReportContent = ({
+const CrashReportContent = ({
   loading,
   error,
   data,
