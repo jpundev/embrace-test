@@ -11,11 +11,12 @@ import {
 } from "recharts";
 import { formatDate, getRandomLineColors } from "../helpers/helper";
 import { AppVersionCrashChartResponseDataType } from "../hooks/useFetchAppVersionErrorCount";
-export const AppVersionCrashChart = ({
-  data,
-}: {
+
+type AppVersionCrashChartProps = {
   data: AppVersionCrashChartResponseDataType[];
-}) => {
+};
+
+export const AppVersionCrashChart = ({ data }: AppVersionCrashChartProps) => {
   const lineColors = useMemo(() => {
     return getRandomLineColors(data.length);
   }, [data]);
