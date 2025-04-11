@@ -59,7 +59,7 @@ const CrashReportContent = ({
   if (data.length === 0)
     return (
       <div className={styles.statusMessageWrapper}>
-        <span className={styles.emptyIcon}>📅</span> {/* No data icon */}
+        <span className={styles.emptyIcon}>📅</span>
         <p className={styles.statusMessage}>
           There is no data for this time period
         </p>
