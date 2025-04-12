@@ -82,6 +82,7 @@ export const useFetchAppVersionErrorCount = ({
 
   useEffect(() => {
     //simulate fetching
+    setLoading(true); // good: sets loading state on param change
 
     const processMockData = () => {
       // I need to flatten the data for recharts into a format thats easy to use
