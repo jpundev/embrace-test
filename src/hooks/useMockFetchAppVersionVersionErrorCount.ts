@@ -62,6 +62,7 @@ export const useMockFetchAppVersionVersionErrorCount = ({
       const flattened: AppVersionCrashChartResponseDataType[] = [];
 
       platformFiltered.forEach(({ app_version, timestamp, ...rest }) => {
+        //We use ...rest as a way to resolve a funky key like crash.count -> maybe accidentally named crash_count?
         const crash_count = rest["crash.count"];
 
         timestamp.forEach((time, i) => {
