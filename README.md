@@ -39,7 +39,7 @@
 ## Libraries Used:
 - **React** for building the UI.
 - **Recharts** for data visualization.
-- **date-fns** for date formatting.
+- **date-fns** for date formatting. ( Not needed probably could use Date )
 
 ## Screenshots:
 https://github.com/user-attachments/assets/ff11c379-55de-481a-9132-2a24ea7a4103
