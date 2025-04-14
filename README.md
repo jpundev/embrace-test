@@ -4,6 +4,7 @@
 - No fetch endpoint was provided; the data is simulated.
 - The indexes of the crash count match the index of the data point's timestamp.
 - Minimal library usage.
+- crash.count is intentional instead of crash_count ( matters in how you destructure it later )
 
 ## Key Features:
 - **Recharts** is used to emulate the Embrace.io stack for data visualization.
