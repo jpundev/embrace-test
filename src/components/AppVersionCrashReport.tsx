@@ -39,24 +39,24 @@ const CrashReportContent = ({
 }: UseFetchAppVersionErrorCountReturnType) => {
   if (loading)
     return (
-      <div className={styles.statusMessageWrapper}>
+      <div className={styles.contentContainer}>
         <span className={styles.spinner} />
       </div>
     );
 
   if (error)
     return (
-      <div className={styles.statusMessageWrapper}>
+      <div className={styles.contentContainer}>
         <span className={styles.errorIcon}>⚠️</span>
         <p className={`${styles.statusMessage} ${styles.errorText}`}>
-          Error: {error}
+          Error: Can't fetch Data
         </p>
       </div>
     );
 
   if (data.length === 0)
     return (
-      <div className={styles.statusMessageWrapper}>
+      <div className={styles.contentContainer}>
         <span className={styles.emptyIcon}>📅</span>
         <p className={styles.statusMessage}>
           There is no data for this time period
@@ -64,7 +64,7 @@ const CrashReportContent = ({
       </div>
     );
   return (
-    <div className={styles.chartContainer}>
+    <div className={styles.contentContainer}>
       <AppVersionCrashChart data={data} />
     </div>
   );
