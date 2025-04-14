@@ -42,12 +42,10 @@
 - **date-fns** for date formatting.
 
 ## Screenshots:
+https://github.com/user-attachments/assets/ff11c379-55de-481a-9132-2a24ea7a4103
 
 ![Screenshot 2025-04-14 030943](https://github.com/user-attachments/assets/f23e41c6-3bd9-4ec3-9414-fa1a144d955c)
 ![Screenshot 2025-04-14 031012](https://github.com/user-attachments/assets/b341634a-a713-496d-a778-9192b34a9ebf)
-
-
-https://github.com/user-attachments/assets/ff11c379-55de-481a-9132-2a24ea7a4103
 
 
 ---
