@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { PlatformTypes } from "../constants/enums";
-import {
-  useFetchAppVersionErrorCount,
-  UseFetchAppVersionErrorCountReturnType,
-} from "../hooks/useFetchAppVersionErrorCount";
+import { UseFetchAppVersionErrorCountReturnType } from "../hooks/useFetchAppVersionErrorCount";
+import { useMockFetchAppVersionVersionErrorCount } from "../hooks/useMockFetchAppVersionVersionErrorCount";
 import { AppVersionCrashChart } from "./AppVersionCrashChart";
 import styles from "./AppVersionCrashReport.module.css";
 import { PlatformSelector } from "./PlatformSelector";
@@ -16,7 +14,7 @@ const tempParams = {
 export const AppVersionCrashReport = () => {
   const [platform, setPlatform] = useState<PlatformTypes>(PlatformTypes.ALL);
 
-  const { data, loading, error } = useFetchAppVersionErrorCount({
+  const { data, loading, error } = useMockFetchAppVersionVersionErrorCount({
     startDate: tempParams.startDate,
     endDate: tempParams.endDate,
     platform,
