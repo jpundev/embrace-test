@@ -10,3 +10,4 @@ export const lineColors = [
   "#43AA8B",
   "#6A4C93",
 ];
+//Hard Coded to just this for now, but for improvements we can dynamically generate a random list of colors or assign them at runtime when building the array for the charts
