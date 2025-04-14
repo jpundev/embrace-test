@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
+import { PlatformTypes } from "../constants/enums";
 
 type FetchAppVersionCrashChartParams = {
   startDate: string;
   endDate: string;
-  version?: string;
+  step: string;
+  platform?: PlatformTypes;
+  app_version?: string;
 };
 
 export type AppVersionCrashChartResponseDataType = {
@@ -14,7 +17,9 @@ export type AppVersionCrashChartResponseDataType = {
 export const useFetchAppVersionErrorCount = ({
   startDate,
   endDate,
-  version,
+  step,
+  platform,
+  app_version,
 }: FetchAppVersionCrashChartParams) => {
   //Typically would handle fetch states via a library but for the purpose of this
   // project, just handle these states here
@@ -29,9 +34,13 @@ export const useFetchAppVersionErrorCount = ({
         const queryParams: Record<string, string> = {
           startDate,
           endDate,
+          step,
         };
-        if (version) {
-          queryParams.version = version;
+        if (app_version) {
+          queryParams.app_version = app_version;
+        }
+        if (platform) {
+          queryParams.platform = platform;
         }
 
         const queryString = new URLSearchParams(queryParams).toString();
@@ -54,7 +63,7 @@ export const useFetchAppVersionErrorCount = ({
     };
 
     fetchData();
-  }, [startDate, endDate, version]);
+  }, [startDate, endDate, app_version, platform, step]);
 
   return {
     loading,
